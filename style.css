@@ -1,0 +1,257 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    text-align: center;
+font-family: 'Roboto', sans-serif;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+   
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+header,nav,.hero,footer{
+    color: white;
+}
+  ul,li,a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+  }
+.top-header ul,.social-media-icons,.top-header,.top-header ul li div{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav,.hero{
+    background-image: url("programming-background-with-person-working-with-codes-computer.jpg");
+  }
+.top-header,footer{
+    background-color:#3571D3;
+    height: 30px;
+    font-size: 15px;
+}
+.top-header{
+  justify-content: center;
+  align-items: center;
+}
+.top-header ul li,.left-nav ul li{
+  margin-right: 20px;
+}
+.social-media-icons div,.top-header ul li p{
+  margin-right: 10px;
+}
+.top-header ul li p{
+  margin-left: 10px;
+}
+.top-header img{
+    width: 20px;
+}
+.social-media-icons div{
+    justify-content: flex-end;
+}
+.logo {
+    width: 160px;
+    height: 60px;
+}
+.navbar-line {
+  height: 2px; /* Thickness of the line */
+  background-color: #ffffff; /* Color of the line */
+  width: 100%;
+}
+nav{
+  height: 100px;
+}
+a {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+a:hover,
+a:focus,
+a:active {
+  transform: scale(1.1);
+}
+.logo img{
+  height: 100%;
+  object-fit: contain;
+}
+nav{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.right-nav{
+  display: flex;
+}
+.left-nav{
+  display:flex;
+  justify-content: center;
+  align-items: center; 
+}
+.right-nav{
+  display: flex;
+  justify-content: space-around;
+}
+.right-nav p{
+  font-size: 35px;
+}
+.right-nav div,.right-nav p{
+  margin-left: 30px;
+}
+.left-nav ul{
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-nav ul li{
+  display: flex;
+  justify-content: space-between;
+}
+.hero{
+  height: 590px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.explore-ezi ul{
+  display: flex;
+}
+.text{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.big-text,.marketing h1{
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+.small-text,.search-bar,.text-2,.explore-ezi{
+  margin-top: 2.5em;
+  letter-spacing: 1.5px;
+}
+.big-text span{
+  color: #2dc6f5;
+}
+.search-bar input{
+  border-radius: 10px;
+  height: 50px;
+  width: 350px;
+  color: black;
+}
+.search-bar ::placeholder{
+  color: rgba(0, 0, 0, 0.526);
+  float: left;
+  margin-left: 10px;
+}
+.explore-ezi{
+  width: 750px;
+}
+.gifs-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gifs-container div{
+  width: 350px;
+}
+
+.explore{
+  margin-top: 4em;
+}
+.link{
+  width: 170px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.518);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.link img{
+  width: 80px;
+}
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.link-top,.link-bottom{
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+}
+.link-bottom div,.link-top div{
+  margin-left: 3em;
+}
+.parent-marketing{
+  height: 400px;
+  display: flex;
+  margin-top: 4em;
+  margin-bottom: 3em;
+  justify-content: center;
+  align-items: center;
+}
+.marketing h1 span{
+  color: #076cd1;
+}
+.marketing{
+  width: 500px;
+}
+.marketing h1,.marketing p{
+  text-align: left;
+}
+.marketing p{
+font-size: 1em;
+letter-spacing: 1px;
+}
+.pic-area img{
+  height: 470px;
+}
